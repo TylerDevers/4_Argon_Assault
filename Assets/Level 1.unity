@@ -112,6 +112,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &26508559 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1987730992583210, guid: c322d3e2dac69476fab657c3b4203eb4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433465823}
+--- !u!114 &26508560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26508559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58cedfb31676400bb5f8702fe0ebc2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 4
+  xRange: 3
+  ySpeed: 4
+  yRange: 2
+  positionPitchFactor: -5
+  controlPitchFactor: -30
+  controlRollFactor: -20
+  positionYawFactor: 7
 --- !u!1 &84573370
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,10 +261,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114661827679203952, guid: c322d3e2dac69476fab657c3b4203eb4,
         type: 2}
-      propertyPath: yRange
-      value: 2
+      propertyPath: ySpeed
+      value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114661827679203952, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: xSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114661827679203952, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: controlPitchFactor
+      value: -30
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114661827679203952, guid: c322d3e2dac69476fab657c3b4203eb4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c322d3e2dac69476fab657c3b4203eb4, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1433465824 stripped
