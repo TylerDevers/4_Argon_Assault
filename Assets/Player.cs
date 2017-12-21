@@ -54,4 +54,9 @@ public class Player : MonoBehaviour {
 
     }
 
+	void OnTriggerEnter(Collider other) 
+	{
+		print("trigger occured");
+	}
+
 }
