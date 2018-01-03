@@ -4,27 +4,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
-	[Tooltip("in Meters/second")] [SerializeField] float xSpeed = 4f;
+	[Header("General")]
+	[Tooltip("in Meters/second")] [SerializeField] float controlSpeed = 4f;
 	[Tooltip("In meters")] [SerializeField] float xRange = 3f;
 	[Tooltip("in Meters/second")] [SerializeField] float ySpeed = 4f;
 	[Tooltip("In meters")] [SerializeField] float yRange = 2f;
+
+	[Header("Screen-position Based")]
 	[SerializeField] float positionPitchFactor = -5f;
 	[SerializeField] float controlPitchFactor = -30f;
+
+	[Header("Control-throw Based")]
 	[SerializeField] float controlRollFactor = -20f;
 	[SerializeField] float positionYawFactor = 7f;
-	float xThrow, yThrow;
-	// Use this for initialization
-	void Start () {
 
+	float xThrow, yThrow;
+	bool controlsEnabled = true;
+
+	void OnPlayerDeath()  //called from CollisionHandler
+	{
+		controlsEnabled = false;
+		print("death is tested!");
 	}
 
     // Update is called once per frame
     void Update () {
-		
-		ProcessTranslation();
-		ProcessRotation();
+		if (controlsEnabled)
+		{
+			ProcessTranslation();
+			ProcessRotation();
+		}
 	}
 
     private void ProcessRotation()
@@ -42,7 +53,7 @@ public class Player : MonoBehaviour {
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
 		yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-		float xOffset = xThrow * xSpeed * Time.deltaTime;
+		float xOffset = xThrow * controlSpeed * Time.deltaTime;
 		float yOffset = yThrow * ySpeed * Time.deltaTime;
 		float rawXPos = transform.localPosition.x + xOffset;
 		float rawYPos = transform.localPosition.y + yOffset;
@@ -53,10 +64,5 @@ public class Player : MonoBehaviour {
 		transform.localPosition = new Vector3(transform.localPosition.x, clampedYPos, transform.localPosition.z);
 
     }
-
-	void OnTriggerEnter(Collider other) 
-	{
-		print("trigger occured");
-	}
 
 }
