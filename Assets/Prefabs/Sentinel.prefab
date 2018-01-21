@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23349224680791204}
   - component: {fileID: 114008081474866464}
   m_Layer: 0
-  m_Name: Ship_04
+  m_Name: Sentinel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,3 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b76e189b218d041d4bfb5c92a07a1fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 0}
+  parent: {fileID: 0}
+  scorePerHit: 12
+  hits: 10
