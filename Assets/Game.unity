@@ -317,7 +317,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 5f9749b455ed9402e9484d63cd835ea0, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -417,7 +417,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -256.38
+      value: -313.1
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -425,7 +425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -223.6
+      value: -227.7
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -486,6 +486,11 @@ Prefab:
       propertyPath: m_Name
       value: Sentinel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114008081474866464, guid: f3f8aa2e27a86431684ecfb3def33f0b,
+        type: 2}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
   m_IsPrefabParent: 0
@@ -525,7 +530,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 43474ec426f3449749495f95486bca43, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -543,15 +548,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -261.23444
+      value: -326.6
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 92.7047
+      value: 92.7
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -223.59819
+      value: -228.8
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -612,6 +617,11 @@ Prefab:
       propertyPath: m_Name
       value: Sentinel (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 114008081474866464, guid: f3f8aa2e27a86431684ecfb3def33f0b,
+        type: 2}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
   m_IsPrefabParent: 0
@@ -651,7 +661,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 43474ec426f3449749495f95486bca43, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -711,15 +721,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -250.81
+      value: -300.1
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 92.70471
+      value: 92.7
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -223.6
+      value: -226.5
       objectReference: {fileID: 0}
     - target: {fileID: 4574944116967480, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -780,6 +790,11 @@ Prefab:
       propertyPath: m_Name
       value: Sentinel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114008081474866464, guid: f3f8aa2e27a86431684ecfb3def33f0b,
+        type: 2}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f8aa2e27a86431684ecfb3def33f0b, type: 2}
   m_IsPrefabParent: 0
@@ -819,7 +834,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 43474ec426f3449749495f95486bca43, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -1116,7 +1131,8 @@ PlayableDirector:
   - key: {fileID: 114591154746745894, guid: 1c8c8e0d223cc4393928347c5a819df3, type: 2}
     value: {fileID: 1803481238}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 0c71236f27d014d1786524507a250051: {fileID: 321587002}
 --- !u!1001 &1246143962
 Prefab:
   m_ObjectHideFlags: 0
@@ -1171,6 +1187,26 @@ Prefab:
       propertyPath: guns.Array.data[1]
       value: 
       objectReference: {fileID: 333019704}
+    - target: {fileID: 65038822514640368, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.8835034
+      objectReference: {fileID: 0}
+    - target: {fileID: 65038822514640368, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.0036674794
+      objectReference: {fileID: 0}
+    - target: {fileID: 65038822514640368, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.98552567
+      objectReference: {fileID: 0}
+    - target: {fileID: 65038822514640368, guid: c322d3e2dac69476fab657c3b4203eb4,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 1.2809592
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c322d3e2dac69476fab657c3b4203eb4, type: 2}
   m_IsPrefabParent: 0
