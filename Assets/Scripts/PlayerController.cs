@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour {
 			ProcessRotation();
 			ProcessFiring();
 		}
+		
 	}
 
     private void ProcessRotation()
@@ -83,7 +84,8 @@ public class PlayerController : MonoBehaviour {
     {
         foreach(GameObject gun in guns)
 		{
-			gun.SetActive(isActive);
+			var weapon = gun.GetComponent<ParticleSystem>().emission;
+			weapon.enabled = isActive;
 		}
     }
 
