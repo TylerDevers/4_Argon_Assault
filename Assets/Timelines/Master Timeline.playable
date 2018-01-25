@@ -149,8 +149,20 @@ AnimationClip:
       - serializedVersion: 2
         time: 25.433332
         value: {x: -2.0876465, y: 16.019999, z: 451.80408}
-        inSlope: {x: 0, y: 1.0934215, z: 16.401402}
-        outSlope: {x: 0, y: 1.0934215, z: 16.401402}
+        inSlope: {x: 0, y: 0, z: 16.401402}
+        outSlope: {x: 0, y: 0, z: 16.401402}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 26.216667
+        value: {x: -7.120663, y: 12, z: 463.77054}
+        inSlope: {x: -12.258899, y: 0, z: 14.24398}
+        outSlope: {x: -12.258899, y: 0, z: 14.24398}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 28.816668
+        value: {x: -67.2972, y: 12, z: 495.3504}
+        inSlope: {x: -27.516197, y: 0, z: 11.069228}
+        outSlope: {x: -27.516197, y: 0, z: 11.069228}
         tangentMode: 0
       - serializedVersion: 2
         time: 30.166666
@@ -453,8 +465,20 @@ AnimationClip:
       - serializedVersion: 2
         time: 25.433332
         value: 16.019999
-        inSlope: 1.0934215
-        outSlope: 1.0934215
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 26.216667
+        value: 12
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 28.816668
+        value: 12
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 30.166666
@@ -926,11 +950,11 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 15.766666666666667
+  - m_Start: 24.2
     m_ClipIn: 0
     m_Asset: {fileID: 114888798591208876}
     m_UnderlyingAsset: {fileID: 114888798591208876}
-    m_Duration: 15.116666666666667
+    m_Duration: 8.133333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114554205691412878}
     m_EaseInDuration: 0
