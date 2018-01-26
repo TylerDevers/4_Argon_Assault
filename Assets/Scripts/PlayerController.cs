@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour {
 			ProcessRotation();
 			ProcessFiring();
 		}
+		
 	}
 
     private void ProcessRotation()
@@ -71,28 +72,21 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (CrossPlatformInputManager.GetButton("Fire"))
 		{
-			ActivateGuns();
+			SetGunsActive(true);
 		}
 		else
 		{
-			DeactivateGuns();
+			SetGunsActive(false);
 		}
 	}
 
-	void DeactivateGuns()
+    void SetGunsActive(bool isActive)
     {
         foreach(GameObject gun in guns)
 		{
-			gun.SetActive(false);
+			var weapon = gun.GetComponent<ParticleSystem>().emission;
+			weapon.enabled = isActive;
 		}
     }
-
-    void ActivateGuns() 
-	{
-		foreach(GameObject gun in guns)
-		{
-			gun.SetActive(true);
-		}
-	}
 
 }
