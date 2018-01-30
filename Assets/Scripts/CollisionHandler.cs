@@ -11,7 +11,7 @@ public class CollisionHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		//WinSequence();
 	}
 	
 	// Update is called once per frame
@@ -21,9 +21,18 @@ public class CollisionHandler : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) 
 	{
-		StartDeathSequence();
-		deathFX.SetActive(true);
-		Invoke("ReloadScene", levelLoadDelay);
+		if (other.gameObject.tag == "Finish")
+		{
+			print("landing achieved");
+			//WinSequence();
+		} 
+		else
+		{
+			StartDeathSequence();
+			deathFX.SetActive(true);
+			Invoke("ReloadScene", levelLoadDelay);
+		}
+
 	}
 
 	 void StartDeathSequence()
@@ -34,5 +43,11 @@ public class CollisionHandler : MonoBehaviour {
 	void ReloadScene()
 	{
 		SceneManager.LoadScene(1);
+	}
+
+	void WinSequence()
+	{
+		//SendMessage("TextAppear");
+		
 	}
 }
