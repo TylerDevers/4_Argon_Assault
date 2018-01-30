@@ -24,5 +24,6 @@ public class LevelWin : MonoBehaviour {
 		var congrats = GameObject.Find("Congrats");
 		var text = congrats.GetComponent<Text>(); //needed UnityEngine.UI namespace, text.text now accesses text field.
 		text.enabled = true;
+		//hidden button will activate new level
 	}
 }
