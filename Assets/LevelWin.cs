@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelWin : MonoBehaviour {
 
-	//var congrats = GameObject.Find("Congrats");
+	[SerializeField] GameObject winText;
 
 	// Use this for initialization
 	void Start () {
@@ -20,12 +21,8 @@ public class LevelWin : MonoBehaviour {
 
 	void WinTextAppear()
 	{
-		//serialize Gameobject[] winTextField // attach canvas text to it.
-		//then get objects component and enable it, or make it active.
-		var congrats = GameObject.FindWithTag("Respawn");
-		//var canvas = GetComponent<Canvas>();
-		//var showWin =  canvas.transform.Find("Win").gameObject;
-		//SetActive(true);
-		print(" WinTextAppear ");
+		var congrats = GameObject.Find("Congrats");
+		var text = congrats.GetComponent<Text>(); //needed UnityEngine.UI namespace, text.text now accesses text field.
+		text.enabled = true;
 	}
 }
