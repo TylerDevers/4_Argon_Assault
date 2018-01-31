@@ -15,9 +15,9 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 114591154746745894}
   - {fileID: 114871576915304074}
+  - {fileID: 114251161928906096}
   - {fileID: 114153380254349002}
   - {fileID: 114693194452820458}
-  - {fileID: 114251161928906096}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
@@ -798,11 +798,11 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 24.2
-    m_ClipIn: 0
-    m_Asset: {fileID: 114278766747029772}
-    m_UnderlyingAsset: {fileID: 114278766747029772}
-    m_Duration: 14.116666666666664
+  - m_Start: 0.7
+    m_ClipIn: 2.05
+    m_Asset: {fileID: 114506160778732180}
+    m_UnderlyingAsset: {fileID: 114506160778732180}
+    m_Duration: 36.34999999999999
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114153380254349002}
     m_EaseInDuration: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0
+  - m_Start: 2.05
     m_ClipIn: 0
     m_Asset: {fileID: 114771119595168512}
     m_UnderlyingAsset: {fileID: 114771119595168512}
@@ -954,7 +954,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: ControlPlayableAsset
     m_Version: 1
---- !u!114 &114278766747029772
+--- !u!114 &114506160778732180
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -966,11 +966,11 @@ MonoBehaviour:
   m_Name: ControlPlayableAsset
   m_EditorClassIdentifier: 
   sourceGameObject:
-    exposedName: 59cfbe350f5534ae791e8481df8acf11
+    exposedName: b2355c28b07ec4f2283824bfa6bfedbf
     defaultValue: {fileID: 0}
   prefabGameObject: {fileID: 0}
   updateParticle: 1
-  particleRandomSeed: 7060
+  particleRandomSeed: 4319
   updateDirector: 1
   updateITimeControl: 1
   searchHierarchy: 1
