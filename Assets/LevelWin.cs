@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class LevelWin : MonoBehaviour {
 
 	[SerializeField] GameObject winText;
-
+	[SerializeField] Button hiddenButton;
 	// Use this for initialization
 	void Start () {
 		//Invoke("WinTextAppear", 5);
@@ -16,7 +17,7 @@ public class LevelWin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//print("update neing called ");
+		WinClickEnabled();
 	}
 
 	void WinTextAppear()
@@ -26,4 +27,14 @@ public class LevelWin : MonoBehaviour {
 		text.enabled = true;
 		//hidden button will activate new level
 	}
+
+	void WinClickEnabled()
+	{
+		hiddenButton.onClick.AddListener(Restart);
+	}
+
+    void Restart()
+    {
+        print("btn clicked");
+    }
 }
