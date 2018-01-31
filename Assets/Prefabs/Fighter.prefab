@@ -97,4 +97,4 @@ MonoBehaviour:
   deathFX: {fileID: 0}
   parent: {fileID: 0}
   scorePerHit: 12
-  hits: 10
+  hits: 5
